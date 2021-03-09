@@ -1,0 +1,15 @@
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\bin\Debug\Person-Managment.exe.config
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\bin\Debug\Person-Managment.exe
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\bin\Debug\Person-Managment.pdb
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment.csprojAssemblyReference.cache
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\MainWindow.g.cs
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\App.g.cs
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment_MarkupCompile.cache
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment_MarkupCompile.lref
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\MainWindow.baml
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment.g.resources
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person_Managment.Properties.Resources.resources
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment.csproj.GenerateResource.cache
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment.csproj.CoreCompileInputs.cache
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment.exe
+C:\Users\MIHA\Desktop\Programming\metrel-person-app\Person-Managment\obj\Debug\Person-Managment.pdb
