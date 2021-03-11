@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="Person_Managment.Component.PersonDisplay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Person_Managment.Component"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <!--
+    Komponenta za prikaz podatkov o osebi
+    -->
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Design/PersonDisplayStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Style="{StaticResource container}">        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Style="{StaticResource data_display_header}">Podatki o osebi:</Label>
+        <Label Grid.Row="1" Style="{StaticResource label_keywords}">Ime:</Label>
+        <Label Grid.Row="2" Style="{StaticResource label_keywords}">Priimek:</Label>
+        <Label Grid.Row="3" Style="{StaticResource label_keywords}">Davčna št.:</Label>
+        <Label Grid.Row="4" Style="{StaticResource label_keywords}">Naslov:</Label>
+        <TextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.GivenName}"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.LastName}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="3" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.TaxNumber}"></TextBox>
+        <Grid Grid.Column="1" Grid.Row="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content=""/>
+            <Label Grid.Row="1" Style="{StaticResource label_keywords}">Ulica.:</Label>
+            <Label Grid.Row="2" Style="{StaticResource label_keywords}">Hišna št.:</Label>
+            <Label Grid.Row="3" Style="{StaticResource label_keywords}">Kraj:</Label>
+            <Label Grid.Row="4" Style="{StaticResource label_keywords}">Poštna št.:</Label>
+            <Label Grid.Row="5" Style="{StaticResource label_keywords}">Država:</Label>
+            <TextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.HomeAddress.HouseNumber}"/>
+            <TextBox Grid.Column="1" Grid.Row="2" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.HomeAddress.Street}"/>
+            <TextBox Grid.Column="1" Grid.Row="3" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.HomeAddress.City}"/>
+            <TextBox Grid.Column="1" Grid.Row="4" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.HomeAddress.PostalCode}"/>
+            <TextBox Grid.Column="1" Grid.Row="5" Style="{StaticResource label_data}" IsEnabled="{Binding Path=IsEditMode}" Text="{Binding Path=SelectedPerson.HomeAddress.Country}"/>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--
+    Paleta barv, ki se uporabljajo v grafičnem vmesniku aplikacije
+    -->
+    <SolidColorBrush x:Key="color_dark" Color="#2e678f"/>
+    <SolidColorBrush x:Key="color_light" Color="#c0dcf0"/>
+    <SolidColorBrush x:Key="color_dark_text" Color="#002036"/>
+    <SolidColorBrush x:Key="color_light_text" Color="#accfe8"/>
+    <SolidColorBrush x:Key="color_medium_text" Color="#2a485e"/>
+</ResourceDictionary>
