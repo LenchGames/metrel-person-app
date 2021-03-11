@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <ID>0</ID>
+    <GivenName>Jon</GivenName>
+    <LastName>Doe</LastName>
+    <TaxNumber>754654</TaxNumber>
+    <HomeAddress>
+      <HouseNumber>Ljubljanska cesta</HouseNumber>
+      <Street>12</Street>
+      <City>Maribor</City>
+      <PostalCode>2000</PostalCode>
+      <Country>Slovenia</Country>
+    </HomeAddress>
+  </Person>
+  <Person>
+    <ID>1</ID>
+    <GivenName>Jane</GivenName>
+    <LastName>Smith</LastName>
+    <TaxNumber>794512</TaxNumber>
+    <HomeAddress>
+      <HouseNumber />
+      <Street />
+      <City />
+      <PostalCode />
+      <Country />
+    </HomeAddress>
+  </Person>
+</ArrayOfPerson>

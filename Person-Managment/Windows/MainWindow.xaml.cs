@@ -185,6 +185,8 @@ namespace Person_Managment {
             sfd.Filter = "XML Files | *.xml";
             if (sfd.ShowDialog() == true) {
                 Storage = new DataStorage(sfd.FileName);
+                personList = Storage.Search(searchInput.Text);
+                peopleListDisplay.ItemsSource = personList;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(null));
             }
         }
